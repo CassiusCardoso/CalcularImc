@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 62,5%;
+}
+
+.container {
+  max-width: 640px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container h1{
+  text-align: center;
+}
+
+.imc-table{
+  padding: 5px 0;
+}
+
+
+.container p{
+  font-size: 1.2rem;
+}
+
+form, h3{
+  padding: 5px 0;
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.imc-calc, form, input#peso{
+  font-size: 1.2rem;
+}
+
+.imc-calc, form, input#altura{
+  font-size: 1.2rem;
+}
+
+.paragraph-result{
+  font-size: 1.2rem;
+  background-color: rgb(105, 252, 117);
+  padding: 10px 20px;
+  transition: 0.3s all ease;
+}
+
+.paragraph-not-result{
+  font-size: 1.2rem;
+  background-color: rgb(252, 105, 105);
+  padding: 10px 20px;
+  transition: 0.3s all ease;
+}
